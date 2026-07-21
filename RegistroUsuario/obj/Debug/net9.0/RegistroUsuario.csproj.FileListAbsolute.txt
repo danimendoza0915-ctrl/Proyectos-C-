@@ -1,0 +1,14 @@
+C:\Proyectos c#\RegistroUsuario\bin\Debug\net9.0\RegistroUsuario.exe
+C:\Proyectos c#\RegistroUsuario\bin\Debug\net9.0\RegistroUsuario.deps.json
+C:\Proyectos c#\RegistroUsuario\bin\Debug\net9.0\RegistroUsuario.runtimeconfig.json
+C:\Proyectos c#\RegistroUsuario\bin\Debug\net9.0\RegistroUsuario.dll
+C:\Proyectos c#\RegistroUsuario\bin\Debug\net9.0\RegistroUsuario.pdb
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\RegistroUsuario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\RegistroUsuario.AssemblyInfoInputs.cache
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\RegistroUsuario.AssemblyInfo.cs
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\RegistroUsuario.csproj.CoreCompileInputs.cache
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\RegistroUsuario.dll
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\refint\RegistroUsuario.dll
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\RegistroUsuario.pdb
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\RegistroUsuario.genruntimeconfig.cache
+C:\Proyectos c#\RegistroUsuario\obj\Debug\net9.0\ref\RegistroUsuario.dll
