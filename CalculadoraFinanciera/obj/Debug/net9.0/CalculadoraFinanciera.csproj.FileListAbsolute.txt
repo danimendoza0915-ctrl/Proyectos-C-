@@ -1,0 +1,17 @@
+C:\Proyectos c#\CalculadoraFinanciera\bin\Debug\net9.0\CalculadoraFinanciera.exe
+C:\Proyectos c#\CalculadoraFinanciera\bin\Debug\net9.0\CalculadoraFinanciera.deps.json
+C:\Proyectos c#\CalculadoraFinanciera\bin\Debug\net9.0\CalculadoraFinanciera.runtimeconfig.json
+C:\Proyectos c#\CalculadoraFinanciera\bin\Debug\net9.0\CalculadoraFinanciera.dll
+C:\Proyectos c#\CalculadoraFinanciera\bin\Debug\net9.0\CalculadoraFinanciera.pdb
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\CalculadoraFinanciera.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\CalculadoraFinanciera.AssemblyInfoInputs.cache
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\CalculadoraFinanciera.AssemblyInfo.cs
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\CalculadoraFinanciera.csproj.CoreCompileInputs.cache
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\CalculadoraFinanciera.dll
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\refint\CalculadoraFinanciera.dll
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\CalculadoraFinanciera.pdb
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\CalculadoraFinanciera.genruntimeconfig.cache
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\ref\CalculadoraFinanciera.dll
+C:\Proyectos c#\CalculadoraFinanciera\bin\Debug\net9.0\Geolocation.dll
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\CalculadoraFinanciera.csproj.AssemblyReference.cache
+C:\Proyectos c#\CalculadoraFinanciera\obj\Debug\net9.0\Calculad.258294BC.Up2Date

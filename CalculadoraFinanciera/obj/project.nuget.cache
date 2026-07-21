@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mWD5QnnHzPo=",
+  "success": true,
+  "projectFilePath": "C:\\Proyectos c#\\CalculadoraFinanciera\\CalculadoraFinanciera.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danim\\.nuget\\packages\\geolocation\\1.2.1\\geolocation.1.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
