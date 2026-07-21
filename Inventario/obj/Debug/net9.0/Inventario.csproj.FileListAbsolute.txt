@@ -1,0 +1,14 @@
+C:\Proyectos c#\Inventario\bin\Debug\net9.0\Inventario.exe
+C:\Proyectos c#\Inventario\bin\Debug\net9.0\Inventario.deps.json
+C:\Proyectos c#\Inventario\bin\Debug\net9.0\Inventario.runtimeconfig.json
+C:\Proyectos c#\Inventario\bin\Debug\net9.0\Inventario.dll
+C:\Proyectos c#\Inventario\bin\Debug\net9.0\Inventario.pdb
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\Inventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\Inventario.AssemblyInfoInputs.cache
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\Inventario.AssemblyInfo.cs
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\Inventario.csproj.CoreCompileInputs.cache
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\Inventario.dll
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\refint\Inventario.dll
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\Inventario.pdb
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\Inventario.genruntimeconfig.cache
+C:\Proyectos c#\Inventario\obj\Debug\net9.0\ref\Inventario.dll
