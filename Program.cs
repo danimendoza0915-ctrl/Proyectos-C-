@@ -1,187 +1,220 @@
-﻿// Daniel Mendoza Gutierrez
-using System;
-using System.Globalization;
-using System.Text.RegularExpressions;
+﻿using System;
+using System.Collections.Generic;
 
-// ===================== Excepciones Personalizadas =====================
-#region
-public class ValorNoNumericoException : Exception
+class Program
 {
-    public ValorNoNumericoException() : base("El valor ingresado no es numérico.") { }
-    public ValorNoNumericoException(string mensaje) : base(mensaje) { }
-    public ValorNoNumericoException(string mensaje, Exception interna) : base(mensaje, interna) { }
-}
-
-public class ArregloVacioException : Exception
-{
-    public ArregloVacioException() : base("El arreglo está vacío. Primero debe ingresar los valores.") { }
-    public ArregloVacioException(string mensaje) : base(mensaje) { }
-    public ArregloVacioException(string mensaje, Exception interna) : base(mensaje, interna) { }
-}
-#endregion
-
-class Programa
-{
-    static double[] temperaturas;
-
-    // ===================== VALIDACIONES =====================
-
-    // Validar valores numéricos
-    static double ValidarNumero(string valor)
+    // ======= ESTRUCTURAS =======
+    struct Estudiante
     {
-        valor = valor.Replace(",", ".").Trim();
-
-        if (!double.TryParse(valor, NumberStyles.Float, CultureInfo.InvariantCulture, out double numero))
-        {
-            throw new ValorNoNumericoException($"'{valor}' no es un número válido.");
-        }
-
-        return numero;
+        public int Id;
+        public string Nombre;
+        public string Carrera;
+        public string Estatus;
+        public List<string> Materias;
     }
 
-    // Validar que el arreglo tenga valores
-    static void ValidarArregloNoVacio()
+    struct Solicitud
     {
-        if (temperaturas == null || temperaturas.Length == 0)
-            throw new ArregloVacioException();
+        public string Tipo;
+        public string Prioridad;
+        public string Estado;
     }
 
-    // ===================== CAPTURAR ARREGLO =====================
-    static void IngresarArreglo()
+    struct Pago
     {
-        try
-        {
-            Console.WriteLine("Ingrese las temperaturas separadas por espacio:");
-            string entrada = Console.ReadLine();
-
-            if (string.IsNullOrWhiteSpace(entrada))
-                throw new Exception("No se ingresaron valores.");
-
-            string[] partes = entrada.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
-            double[] temporal = new double[partes.Length];
-
-            for (int i = 0; i < partes.Length; i++)
-            {
-                temporal[i] = ValidarNumero(partes[i]);
-            }
-
-            temperaturas = temporal;
-
-            Console.WriteLine("=========================================");
-            Console.WriteLine("   Arreglo capturado correctamente");
-            Console.WriteLine("=========================================");
-        }
-        catch (ValorNoNumericoException ex)
-        {
-            Console.WriteLine($"ERROR: {ex.Message}");
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"ERROR: {ex.Message}");
-        }
-        finally
-        {
-            Console.WriteLine("Finalizando captura de temperaturas...\n");
-        }
+        public string Concepto;
+        public decimal Monto;
+        public string Periodo;
     }
 
-    // ===================== MOSTRAR ARREGLO =====================
-    static void MostrarArreglo()
+    // ======= LISTAS =======
+    static List<Estudiante> estudiantes = new List<Estudiante>();
+    static List<Solicitud> solicitudes = new List<Solicitud>();
+    static List<Pago> pagos = new List<Pago>();
+
+    // ======= MATERIAS DISPONIBLES =======
+    static Dictionary<string, int> materias = new Dictionary<string, int>()
     {
-        try
-        {
-            ValidarArregloNoVacio();
+        {"Programacion", 3},
+        {"BasesDatos", 2},
+        {"Redes", 2},
+        {"Web", 4}
+    };
 
-            Console.WriteLine("Temperaturas ingresadas:");
-            Console.WriteLine(string.Join(", ", temperaturas));
-        }
-        catch (ArregloVacioException ex)
-        {
-            Console.WriteLine($"ERROR: {ex.Message}");
-        }
-        finally
-        {
-            Console.WriteLine();
-        }
-    }
-
-    // ===================== ORDENAR ARREGLO =====================
-    static void OrdenarArreglo()
-    {
-        try
-        {
-            ValidarArregloNoVacio();
-
-            double[] copia = (double[])temperaturas.Clone();
-
-            double[] negativos = Array.FindAll(copia, t => t < 0);
-            double[] positivos = Array.FindAll(copia, t => t >= 0);
-
-            Array.Sort(positivos);               // ascendente
-            Array.Sort(negativos);
-            Array.Reverse(negativos);            // descendente
-
-            Console.WriteLine("=========================================");
-            Console.WriteLine(" Temperaturas ordenadas según la regla:");
-            Console.WriteLine(" - Negativas: descendente");
-            Console.WriteLine(" - No negativas: ascendente");
-            Console.WriteLine("=========================================");
-
-            Console.WriteLine("Negativas:   " + string.Join(", ", negativos));
-            Console.WriteLine("No negativas:" + string.Join(", ", positivos));
-        }
-        catch (ArregloVacioException ex)
-        {
-            Console.WriteLine($"ERROR: {ex.Message}");
-        }
-        finally
-        {
-            Console.WriteLine();
-        }
-    }
-
-    // ===================== MENÚ PRINCIPAL =====================
     static void Main()
     {
-        int opcion = 0;
-        bool salir = false;
-
-        while (!salir)
+        while (true)
         {
-            Console.WriteLine("=========================================");
-            Console.WriteLine("        SISTEMA DE TEMPERATURAS");
-            Console.WriteLine("=========================================");
-            Console.WriteLine("1. Ingresar temperaturas");
-            Console.WriteLine("2. Mostrar arreglo");
-            Console.WriteLine("3. Ordenar arreglo");
-            Console.WriteLine("4. Salir");
-            Console.Write("Seleccione una opción: ");
+            Console.Clear();
+            Console.WriteLine("===== SIGA — SISTEMA ACADEMICO =====");
+            Console.WriteLine("1. Gestion Estudiantes");
+            Console.WriteLine("2. Inscripciones");
+            Console.WriteLine("3. Servicios Escolares");
+            Console.WriteLine("4. Pagos");
+            Console.WriteLine("5. Reportes");
+            Console.WriteLine("0. Salir");
 
-            string op = Console.ReadLine();
-
-            if (!int.TryParse(op, out opcion))
+            switch (Console.ReadLine())
             {
-                Console.WriteLine("Debe ingresar un número entero.\n");
-                continue;
-            }
-
-            Console.WriteLine();
-
-            switch (opcion)
-            {
-                case 1: IngresarArreglo(); break;
-                case 2: MostrarArreglo(); break;
-                case 3: OrdenarArreglo(); break;
-                case 4:
-                    salir = true;
-                    Console.WriteLine("Saliendo del programa...");
-                    break;
-                default:
-                    Console.WriteLine("Opción no válida.\n");
-                    break;
+                case "1": ModuloEstudiantes(); break;
+                case "2": ModuloInscripciones(); break;
+                case "3": ModuloServicios(); break;
+                case "4": ModuloPagos(); break;
+                case "5": Reportes(); break;
+                case "0": return;
             }
         }
     }
-}
 
+    // ===============================
+    static void ModuloEstudiantes()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Registro de Estudiante ===");
+
+        Estudiante e = new Estudiante();
+        e.Materias = new List<string>();
+
+        Console.Write("ID: ");
+        e.Id = int.Parse(Console.ReadLine());
+
+        Console.Write("Nombre: ");
+        e.Nombre = Console.ReadLine();
+
+        Console.Write("Carrera: ");
+        e.Carrera = Console.ReadLine();
+
+        Console.Write("Estatus: ");
+        e.Estatus = Console.ReadLine();
+
+        estudiantes.Add(e);
+
+        Console.WriteLine("Registrado ✔");
+        Console.ReadKey();
+    }
+
+    // ===============================
+    static void ModuloInscripciones()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Inscripcion ===");
+
+        if (estudiantes.Count == 0)
+        {
+            Console.WriteLine("No hay estudiantes");
+            Console.ReadKey();
+            return;
+        }
+
+        MostrarEstudiantes();
+        Console.Write("Seleccione ID: ");
+        int id = int.Parse(Console.ReadLine());
+
+        int index = estudiantes.FindIndex(x => x.Id == id);
+        if (index == -1) return;
+
+        Console.WriteLine("Materias disponibles:");
+        foreach (var m in materias)
+            Console.WriteLine($"{m.Key} — Cupo:{m.Value}");
+
+        Console.Write("Materia: ");
+        string mat = Console.ReadLine();
+
+        if (materias.ContainsKey(mat) && materias[mat] > 0)
+        {
+            materias[mat]--;
+            var est = estudiantes[index];
+            est.Materias.Add(mat);
+            estudiantes[index] = est;
+
+            Console.WriteLine("Inscrito ✔");
+        }
+        else
+            Console.WriteLine("Sin cupo ✖");
+
+        Console.ReadKey();
+    }
+
+    // ===============================
+    static void ModuloServicios()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Solicitud ===");
+
+        Solicitud s = new Solicitud();
+
+        Console.Write("Tipo: ");
+        s.Tipo = Console.ReadLine();
+
+        Console.Write("Prioridad: ");
+        s.Prioridad = Console.ReadLine();
+
+        s.Estado = "Registrado";
+
+        solicitudes.Add(s);
+
+        Console.WriteLine("Solicitud guardada ✔");
+        Console.ReadKey();
+    }
+
+    // ===============================
+    static void ModuloPagos()
+    {
+        Console.Clear();
+        Console.WriteLine("=== Pagos ===");
+
+        Pago p = new Pago();
+
+        Console.Write("Concepto: ");
+        p.Concepto = Console.ReadLine();
+
+        Console.Write("Monto: ");
+        p.Monto = decimal.Parse(Console.ReadLine());
+
+        Console.Write("Periodo: ");
+        p.Periodo = Console.ReadLine();
+
+        Console.Write("Descuento % (0 si no): ");
+        decimal d = decimal.Parse(Console.ReadLine());
+
+        if (d > 0)
+            p.Monto -= p.Monto * (d / 100);
+
+        pagos.Add(p);
+
+        Console.WriteLine("Pago registrado ✔");
+        Console.ReadKey();
+    }
+
+    // ===============================
+    static void Reportes()
+    {
+        Console.Clear();
+
+        Console.WriteLine("=== REPORTE ESTUDIANTES ===");
+        foreach (var e in estudiantes)
+        {
+            Console.WriteLine($"{e.Id} {e.Nombre} {e.Carrera} {e.Estatus}");
+            Console.WriteLine("Materias: " + string.Join(",", e.Materias));
+        }
+
+        Console.WriteLine("\n=== REPORTE PAGOS ===");
+        decimal total = 0;
+        foreach (var p in pagos)
+        {
+            Console.WriteLine($"{p.Concepto} {p.Periodo} ${p.Monto}");
+            total += p.Monto;
+        }
+
+        Console.WriteLine($"TOTAL: ${total}");
+
+        Console.ReadKey();
+    }
+
+    // ===============================
+    static void MostrarEstudiantes()
+    {
+        foreach (var e in estudiantes)
+            Console.WriteLine($"{e.Id} — {e.Nombre}");
+    }
+}
