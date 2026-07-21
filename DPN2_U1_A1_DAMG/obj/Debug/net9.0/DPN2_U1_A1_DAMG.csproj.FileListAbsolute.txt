@@ -1,0 +1,14 @@
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\DPN2_U1_A1_DAMG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\DPN2_U1_A1_DAMG.AssemblyInfoInputs.cache
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\DPN2_U1_A1_DAMG.AssemblyInfo.cs
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\DPN2_U1_A1_DAMG.csproj.CoreCompileInputs.cache
+C:\Proyectos c#\DPN2_U1_A1_DAMG\bin\Debug\net9.0\DPN2_U1_A1_DAMG.exe
+C:\Proyectos c#\DPN2_U1_A1_DAMG\bin\Debug\net9.0\DPN2_U1_A1_DAMG.deps.json
+C:\Proyectos c#\DPN2_U1_A1_DAMG\bin\Debug\net9.0\DPN2_U1_A1_DAMG.runtimeconfig.json
+C:\Proyectos c#\DPN2_U1_A1_DAMG\bin\Debug\net9.0\DPN2_U1_A1_DAMG.dll
+C:\Proyectos c#\DPN2_U1_A1_DAMG\bin\Debug\net9.0\DPN2_U1_A1_DAMG.pdb
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\DPN2_U1_A1_DAMG.dll
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\refint\DPN2_U1_A1_DAMG.dll
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\DPN2_U1_A1_DAMG.pdb
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\DPN2_U1_A1_DAMG.genruntimeconfig.cache
+C:\Proyectos c#\DPN2_U1_A1_DAMG\obj\Debug\net9.0\ref\DPN2_U1_A1_DAMG.dll
