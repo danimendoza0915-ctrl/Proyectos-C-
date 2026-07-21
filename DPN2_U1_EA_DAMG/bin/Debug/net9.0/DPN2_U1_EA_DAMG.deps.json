@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "DPN2_U1_EA_DAMG/1.0.0": {
+        "runtime": {
+          "DPN2_U1_EA_DAMG.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DPN2_U1_EA_DAMG/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
