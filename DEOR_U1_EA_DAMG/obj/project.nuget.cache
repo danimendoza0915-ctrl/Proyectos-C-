@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jw+RBLdILOg=",
+  "success": true,
+  "projectFilePath": "C:\\Proyectos c#\\DEOR_U1_EA_DAMG\\DEOR_U1_EA_DAMG.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danim\\.nuget\\packages\\geolocation\\1.2.1\\geolocation.1.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

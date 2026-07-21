@@ -1,0 +1,17 @@
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_EA_DAMG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_EA_DAMG.AssemblyInfoInputs.cache
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_EA_DAMG.AssemblyInfo.cs
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_EA_DAMG.csproj.CoreCompileInputs.cache
+C:\Proyectos c#\DEOR_U1_EA_DAMG\bin\Debug\net9.0\DEOR_U1_EA_DAMG.exe
+C:\Proyectos c#\DEOR_U1_EA_DAMG\bin\Debug\net9.0\DEOR_U1_EA_DAMG.deps.json
+C:\Proyectos c#\DEOR_U1_EA_DAMG\bin\Debug\net9.0\DEOR_U1_EA_DAMG.runtimeconfig.json
+C:\Proyectos c#\DEOR_U1_EA_DAMG\bin\Debug\net9.0\DEOR_U1_EA_DAMG.dll
+C:\Proyectos c#\DEOR_U1_EA_DAMG\bin\Debug\net9.0\DEOR_U1_EA_DAMG.pdb
+C:\Proyectos c#\DEOR_U1_EA_DAMG\bin\Debug\net9.0\Geolocation.dll
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_EA_DAMG.csproj.AssemblyReference.cache
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_.E1462C44.Up2Date
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_EA_DAMG.dll
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\refint\DEOR_U1_EA_DAMG.dll
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_EA_DAMG.pdb
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\DEOR_U1_EA_DAMG.genruntimeconfig.cache
+C:\Proyectos c#\DEOR_U1_EA_DAMG\obj\Debug\net9.0\ref\DEOR_U1_EA_DAMG.dll
